@@ -7,7 +7,12 @@ export default defineConfig({
   plugins: [
     svelte(),
     VitePWA({
-      includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+      includeAssets: [
+        'favicon.ico',
+        'robots.txt',
+        'apple-touch-icon.png',
+        'logo.png',
+      ],
       manifest: {
         name: 'Her is dia website',
         short_name: 'HerIsDia.me',
