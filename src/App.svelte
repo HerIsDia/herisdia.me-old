@@ -10,6 +10,7 @@
   });
   if (needRefresh) {
     updateServiceWorker(true);
+    console.log('refresh needed');
   }
 
   const language = window.navigator.language;
