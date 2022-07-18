@@ -10,6 +10,7 @@
   });
   if (needRefresh) {
     updateServiceWorker(true);
+    window.location.reload();
   }
 
   const language = window.navigator.language;
