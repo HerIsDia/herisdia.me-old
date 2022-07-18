@@ -1,10 +1,6 @@
 <script lang="ts">
-  interface Content {
-    text: string;
-    href: string;
-    color: string;
-  }
-  export let contents: Content[];
+  import type { Social } from 'src/types';
+  export let contents: Social[];
 </script>
 
 <ul

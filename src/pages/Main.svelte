@@ -6,61 +6,21 @@
   import Logo from '../components/Logo.svelte';
   import Subtitle from '../components/Subtitle.svelte';
   import Title from '../components/Title.svelte';
+
+  import { languageString } from '../languages/content';
+  export let language: string = 'en';
 </script>
 
 <Container>
   <Logo />
   <Box>
-    <Title text="Hello, I'm diamant. 👋" />
-    <Subtitle text="She/Her" />
+    <Title text={languageString[language].title} />
+    <Subtitle text={languageString[language].subtitle} />
     <div class="font-light">
-      <List
-        contents={[
-          '📂 Typescript developper.',
-          '🪶 Emotional writer.',
-          '💾 Do french videos.',
-        ]}
-      />
-      <List
-        contents={[
-          '💚 Pokemon & Sims lover.',
-          '👑 Furry princess.',
-          '🌈 Love rainbows.',
-        ]}
-      />
-      <Social
-        contents={[
-          {
-            text: 'Youtube',
-            href: 'https://www.youtube.com/channel/UCcF4Rn8Gbzc_Z_8hIeeV7dg',
-            color: '#f87171',
-          },
-
-          {
-            text: 'Github',
-            href: 'https://github.com/herisdia',
-            color: '#facc15',
-          },
-
-          {
-            text: 'DeviantArt',
-            href: 'https://deviantart.com/hereisdia',
-            color: '#4ade80',
-          },
-
-          {
-            text: 'Source Code',
-            href: 'https://github.com/herisdia/herisdia.me',
-            color: '#60a5fA',
-          },
-
-          {
-            text: 'Art By Puurply',
-            href: 'https://www.deviantart.com/puurply',
-            color: '#c084fc',
-          },
-        ]}
-      />
+      {#each languageString[language].lists as list}
+        <List contents={list} />
+      {/each}
+      <Social contents={languageString[language].social} />
     </div>
   </Box>
 </Container>

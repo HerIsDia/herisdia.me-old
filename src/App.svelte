@@ -12,7 +12,11 @@
     updateServiceWorker(true);
   }
 
+  const language = window.navigator.language;
+  const lang = language.substring(0, 2);
+  console.log(lang);
+
   import Main from './pages/Main.svelte';
 </script>
 
-<Main />
+<Main language={lang} />
