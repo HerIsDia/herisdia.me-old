@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     svelte(),
     VitePWA({
+      registerType: 'autoUpdate',
       includeAssets: [
         'favicon.ico',
         'robots.txt',
