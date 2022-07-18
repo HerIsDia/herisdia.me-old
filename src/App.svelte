@@ -1,17 +1,17 @@
 <script lang="ts">
   import { useRegisterSW } from 'virtual:pwa-register/svelte';
-  const { needRefresh, updateServiceWorker } = useRegisterSW({
+  const updateSW = useRegisterSW({
     onRegistered(swr) {
       console.log(`SW registered: ${swr}`);
     },
     onRegisterError(error) {
       console.log('SW registration error', error);
     },
+    onNeedRefresh() {
+      updateServiceWorker(true);
+      console.log('refresh needed');
+    }
   });
-  if (needRefresh) {
-    updateServiceWorker(true);
-    console.log('refresh needed');
-  }
 
   const language = window.navigator.language;
   const lang = language.substring(0, 2);
