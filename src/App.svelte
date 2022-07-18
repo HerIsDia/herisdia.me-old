@@ -9,13 +9,12 @@
     },
     onNeedRefresh() {
       updateServiceWorker(true);
-      console.log('refresh needed');
+      window.location.reload();
     }
   });
 
   const language = window.navigator.language;
   const lang = language.substring(0, 2);
-  console.log(lang);
 
   import Main from './pages/Main.svelte';
 </script>
