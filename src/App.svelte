@@ -8,9 +8,8 @@
       console.log('SW registration error', error);
     },
     onNeedRefresh() {
-      updateServiceWorker(true);
       window.location.reload();
-    }
+    },
   });
 
   const language = window.navigator.language;
