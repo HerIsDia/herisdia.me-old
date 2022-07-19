@@ -16,6 +16,16 @@
   const lang = language.substring(0, 2);
 
   import Main from './pages/Main.svelte';
+  import Redirection from './pages/Redirection.svelte';
+
+  const quickAccess = window.location.hash.slice(1);
+  console.log(quickAccess);
 </script>
 
-<Main language={lang} />
+{#if quickAccess.startsWith('r:')}
+  <Redirection {quickAccess} language={lang} />
+{:else if quickAccess.startsWith('e:')}
+  <h1>Easter-eggs</h1>
+{:else}
+  <Main language={lang} />
+{/if}
