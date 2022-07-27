@@ -17,10 +17,13 @@
 
   import Main from './pages/Main.svelte';
   import Redirection from './pages/Redirection.svelte';
+  import TextboxEa from './components/TextboxEA.svelte';
 
   const quickAccess = window.location.hash.slice(1);
   console.log(quickAccess);
 </script>
+
+<TextboxEa />
 
 {#if quickAccess.startsWith('r:')}
   <Redirection {quickAccess} language={lang} />
