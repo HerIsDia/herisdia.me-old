@@ -13,6 +13,7 @@ export default defineConfig({
         'robots.txt',
         'apple-touch-icon.png',
         'logo.png',
+        'logos/*.png',
       ],
       manifest: {
         name: 'Her is dia website',
