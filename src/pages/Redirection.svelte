@@ -4,6 +4,7 @@
   import Logo from '../components/Logo.svelte';
   import Subtitle from '../components/Subtitle.svelte';
   import Title from '../components/Title.svelte';
+  import Quotes from '../components/Quotes.svelte';
   import Main from './Main.svelte';
 
   import { onMount } from 'svelte';
@@ -66,6 +67,7 @@
       <Title text="Redirecting into {found.display}. 🧳" />
       <Subtitle text={display} />
     </Box>
+    <Quotes lang={language} />
   </Container>
 {:else}
   <Main {language} />

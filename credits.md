@@ -6,7 +6,7 @@ This is a document about crediting all the artists who have drawn arts for the m
 
 ## Puurply
 
-🖼️ 0, 1, 6, 7, 8, 15, 16, 19. <br/>
+🖼️ 0, 1, 6, 7, 8, 15, 16, 19, 22. <br/>
 🖌️ [DeviantArt](https://www.deviantart.com/puurply)
 
 ## Raiuche
