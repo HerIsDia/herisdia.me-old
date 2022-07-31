@@ -1,5 +1,8 @@
-<script lang="typescript">
+<script lang="ts">
+  export let quickAccessString: string = '';
+
   let form: HTMLFormElement;
+  let input: HTMLInputElement;
 
   const triggered = (e: KeyboardEvent) => {
     if (e.key === 'C' && e.ctrlKey) {
@@ -9,8 +12,14 @@
     }
   };
 
-  const submit = (e: SubmitEvent) => {
-    form.classList.toggle('hidden');
+  const entered = (e: KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      form.classList.toggle('hidden');
+      window.location.hash = `e:${input.value}`;
+      input.value = '';
+      quickAccessString = window.location.hash.slice(1);
+    }
   };
 </script>
 
@@ -21,5 +30,10 @@
   on:submit|preventDefault
   class="absolute top-3 left-3 w-2/5 hidden"
 >
-  <input type="text" class="w-full rounded-md border-2 border-blue-200" />
+  <input
+    bind:this={input}
+    on:keydown={entered}
+    type="text"
+    class="w-full rounded-md border-2 border-blue-200"
+  />
 </form>
