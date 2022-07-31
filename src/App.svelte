@@ -20,7 +20,7 @@
   import EastersEggs from './pages/EastersEggs.svelte';
   import TextboxEa from './components/TextboxEA.svelte';
 
-  $: quickAccess = window.location.hash.slice(1);
+  $: quickAccess = window.location.hash.slice(1).toLowerCase();
   console.log(quickAccess);
 </script>
 

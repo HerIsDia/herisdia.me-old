@@ -103,7 +103,7 @@ export const languageString: LanguageContent = {
       [
         '💚 Amoureuso do Pokemono & dos Simso.',
         '👑 Princesso Furryo.',
-        '🌈 Adoro los arcos-on-cielo.',
+        '🌈 Adoro los arcso-eno-cielo.',
       ],
     ],
     social: [
@@ -135,6 +135,12 @@ export const languageString: LanguageContent = {
         text: 'Créditos dos artos',
         href: 'https://github.com/HerIsDia/herisdia.me/blob/master/credits.md',
         color: '#c084fc',
+      },
+
+      {
+        text: 'Traducteuro',
+        href: 'https://github.com/HerIsDia/herisdia.me/blob/master/credits.md',
+        color: '#FFFFFF',
       },
     ],
   },

@@ -16,9 +16,9 @@
     if (e.key === 'Enter') {
       e.preventDefault();
       form.classList.toggle('hidden');
-      window.location.hash = `e:${input.value}`;
+      window.location.hash = `e:${input.value.toLowerCase()}`;
       input.value = '';
-      quickAccessString = window.location.hash.slice(1);
+      quickAccessString = window.location.hash.slice(1).toLowerCase();
     }
   };
 </script>
