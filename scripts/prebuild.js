@@ -1,4 +1,5 @@
-import { readdir, writeFileSync } from 'fs';
+import { readdir, writeFileSync, readFileSync } from 'fs';
+import { espo } from './espagnolo.js';
 
 console.log('⚙️ Prebuild script started');
 
@@ -15,3 +16,16 @@ readdir('./public/logos', (err, files) => {
     console.log(`📝 Results written to file.`);
   }
 });
+
+console.log('🅰️ Generate Espagnolo quotes.');
+const file = readFileSync('./src/DefaultQuotes.json');
+const quotes = JSON.parse(file);
+const frenchQuotes = quotes['fr'];
+const espoQuotes = [];
+frenchQuotes.forEach((quote) => {
+  espoQuotes.push(espo(quote));
+});
+const newQuotes = { ...quotes, espo: espoQuotes };
+console.log(`📝 Writing quotes to file.`);
+writeFileSync('./src/quotes.json', JSON.stringify(newQuotes));
+console.log(`📝 Quotes written to file.`);
