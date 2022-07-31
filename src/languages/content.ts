@@ -139,7 +139,7 @@ export const languageString: LanguageContent = {
 
       {
         text: 'Traducteuro',
-        href: 'https://github.com/HerIsDia/herisdia.me/blob/master/credits.md',
+        href: 'https://espo.heris.app/',
         color: '#FFFFFF',
       },
     ],
