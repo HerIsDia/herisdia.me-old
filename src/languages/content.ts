@@ -38,8 +38,8 @@ export const languageString: LanguageContent = {
       },
 
       {
-        text: 'Art By Puurply',
-        href: 'https://www.deviantart.com/puurply',
+        text: 'Art Credits',
+        href: 'https://github.com/HerIsDia/herisdia.me/blob/master/credits.md',
         color: '#c084fc',
       },
     ],
@@ -85,8 +85,8 @@ export const languageString: LanguageContent = {
       },
 
       {
-        text: 'Art par Puurply',
-        href: 'https://www.deviantart.com/puurply',
+        text: 'Crédits des arts',
+        href: 'https://github.com/HerIsDia/herisdia.me/blob/master/credits.md',
         color: '#c084fc',
       },
     ],
