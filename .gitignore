@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+package.json
+src/logo.json
+src/quotes.json
