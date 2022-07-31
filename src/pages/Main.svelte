@@ -6,6 +6,7 @@
   import Logo from '../components/Logo.svelte';
   import Subtitle from '../components/Subtitle.svelte';
   import Title from '../components/Title.svelte';
+  import Quotes from '../components/Quotes.svelte';
 
   import { languageString } from '../languages/content';
   import { logoRandom } from '../scripts/logoRandom';
@@ -24,4 +25,5 @@
       <Social contents={languageString[language].social} />
     </div>
   </Box>
+  <Quotes />
 </Container>
