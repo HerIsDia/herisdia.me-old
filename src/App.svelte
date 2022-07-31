@@ -17,6 +17,7 @@
 
   import Main from './pages/Main.svelte';
   import Redirection from './pages/Redirection.svelte';
+  import EastersEggs from './pages/EastersEggs.svelte';
   import TextboxEa from './components/TextboxEA.svelte';
 
   $: quickAccess = window.location.hash.slice(1);
@@ -28,7 +29,7 @@
 {#if quickAccess.startsWith('r:')}
   <Redirection {quickAccess} language={lang} />
 {:else if quickAccess.startsWith('e:')}
-  <h1>Easter-eggs</h1>
+  <EastersEggs {quickAccess} language={lang} />
 {:else}
   <Main language={lang} />
 {/if}

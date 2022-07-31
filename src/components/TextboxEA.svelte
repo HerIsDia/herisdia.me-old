@@ -8,7 +8,7 @@
     if (e.key === 'C' && e.ctrlKey) {
       e.preventDefault();
       form.classList.toggle('hidden');
-      form.focus();
+      input.focus();
     }
   };
 
