@@ -8,11 +8,12 @@
   import Title from '../components/Title.svelte';
 
   import { languageString } from '../languages/content';
+  import { logoRandom } from '../scripts/logoRandom';
   export let language: string = 'en';
 </script>
 
 <Container>
-  <Logo />
+  <Logo src={logoRandom()} />
   <Box>
     <Title text={languageString[language].title} />
     <Subtitle text={languageString[language].subtitle} />
