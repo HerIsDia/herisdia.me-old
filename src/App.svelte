@@ -1,6 +1,6 @@
 <script lang="ts">
   import { useRegisterSW } from 'virtual:pwa-register/svelte';
-  const updateSW = useRegisterSW({
+  useRegisterSW({
     onRegistered(swr) {
       console.log(`SW registered: ${swr}`);
     },
