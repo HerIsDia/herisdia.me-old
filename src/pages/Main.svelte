@@ -25,5 +25,5 @@
       <Social contents={languageString[language].social} />
     </div>
   </Box>
-  <Quotes />
+  <Quotes lang={language} />
 </Container>
