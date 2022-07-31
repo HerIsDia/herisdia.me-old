@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "node ./scripts/prebuild.js && vite --host",
     "build": "node ./scripts/prebuild.js && vite build",
-    "preview": "vite preview",
+    "preview": "vite preview --host",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
