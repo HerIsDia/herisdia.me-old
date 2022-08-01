@@ -16,6 +16,7 @@
     quotesToRender = generateQuote();
     setTimeout(() => {
       quoteP.style.opacity = '1';
+      quoteP.style.transform = 'translateX(0)';
     }, 69);
   });
 
@@ -24,9 +25,16 @@
 
   setInterval(() => {
     quoteP.style.opacity = '0';
+    quoteP.style.transform = 'translateX(-30px)';
     setTimeout(() => {
+      quoteP.style.transitionDuration = '0s';
+      quoteP.style.transform = 'translateX(30px)';
       quotesToRender = generateQuote();
-      quoteP.style.opacity = '1';
+      setTimeout(() => {
+        quoteP.style.transitionDuration = '0.69s';
+        quoteP.style.opacity = '1';
+        quoteP.style.transform = 'translateX(0)';
+      }, 69);
     }, 690);
   }, 6900);
 </script>
@@ -38,7 +46,7 @@
   <p
     bind:this={quoteP}
     class="quoteText font-mundial text-[#ece0f3] italic font-thin"
-    style="opacity: 0;"
+    style="opacity: 0; transform: translateX(30px);"
   >
     {@html quotesToRender}
   </p>
@@ -46,6 +54,6 @@
 
 <style>
   .quoteText {
-    transition: all 0.69s ease-in-out;
+    transition: all 0.69s ease-out;
   }
 </style>
