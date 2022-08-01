@@ -17,15 +17,16 @@ readdir('./public/logos', (err, files) => {
   }
 });
 
-console.log('🅰️ Generate Espagnolo quotes.');
-const file = readFileSync('./src/DefaultQuotes.json');
-const quotes = JSON.parse(file);
-const frenchQuotes = quotes['fr'];
+console.log('🅰️ Generate quotes.');
+const filefr = readFileSync('./src/quotes/fr.txt');
+const fileen = readFileSync('./src/quotes/en.txt');
+const quotesfr = filefr.toString().split('\n');
+const quotesen = fileen.toString().split('\n');
 const espoQuotes = [];
-frenchQuotes.forEach((quote) => {
+quotesfr.forEach((quote) => {
   espoQuotes.push(espo(quote));
 });
-const newQuotes = { ...quotes, espo: espoQuotes };
+const newQuotes = { fr: quotesfr, en: quotesen, espo: espoQuotes };
 console.log(`📝 Writing quotes to file.`);
 writeFileSync('./src/quotes.json', JSON.stringify(newQuotes));
 console.log(`📝 Quotes written to file.`);
