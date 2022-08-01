@@ -14,7 +14,7 @@
 
   setInterval(() => {
     quotesToRender = generateQuote();
-  }, 15000);
+  }, 6900);
 </script>
 
 <div
@@ -28,7 +28,7 @@
 
 <style>
   .quoteText {
-    animation: quotes 15s infinite 0s;
+    animation: quotes 6.9s infinite 0s ease-in-out;
   }
 
   @keyframes quotes {
