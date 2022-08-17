@@ -4,11 +4,15 @@
   import * as quotes from '../quotes.json';
   export let lang: string = 'en';
   let quoteP: HTMLParagraphElement;
+  let oldQuote: string = '';
 
   const generateQuote = () => {
     const quotesInLanguage = quotes[lang];
-    const randomQuote =
-      quotesInLanguage[Math.floor(Math.random() * quotesInLanguage.length)];
+    let randomQuote = '';
+    while (randomQuote === oldQuote) {
+      randomQuote =
+        quotesInLanguage[Math.floor(Math.random() * quotesInLanguage.length)];
+    }
     return randomQuote;
   };
 
