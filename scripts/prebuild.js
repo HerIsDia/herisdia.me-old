@@ -20,8 +20,12 @@ readdir('./public/logos', (err, files) => {
 console.log('🅰️ Generate quotes.');
 const filefr = readFileSync('./src/quotes/fr.txt');
 const fileen = readFileSync('./src/quotes/en.txt');
-const quotesfr = filefr.toString().split('\n');
-const quotesen = fileen.toString().split('\n');
+const fileglobal = readFileSync('./src/quotes/global.txt');
+let quotesfr = filefr.toString().split('\n');
+let quotesen = fileen.toString().split('\n');
+const quotesglobal = fileglobal.toString().split('\n');
+quotesfr = [...quotesfr, ...quotesglobal];
+quotesen = [...quotesen, ...quotesglobal];
 const espoQuotes = [];
 quotesfr.forEach((quote) => {
   espoQuotes.push(espo(quote));
