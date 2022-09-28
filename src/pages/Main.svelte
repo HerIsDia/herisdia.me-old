@@ -19,11 +19,11 @@
     <Title text={languageString[language].title} />
     <Subtitle text={languageString[language].subtitle} />
     <div class="font-light">
+      <Quotes lang={language} />
       {#each languageString[language].lists as list}
         <List contents={list} />
       {/each}
       <Social contents={languageString[language].social} />
     </div>
   </Box>
-  <Quotes lang={language} />
 </Container>
