@@ -29,10 +29,10 @@
 
   setInterval(() => {
     quoteP.style.opacity = '0';
-    quoteP.style.transform = 'translateX(-30px)';
+    quoteP.style.transform = 'translateX(-5px)';
     setTimeout(() => {
       quoteP.style.transitionDuration = '0s';
-      quoteP.style.transform = 'translateX(30px)';
+      quoteP.style.transform = 'translateX(5px)';
       quotesToRender = generateQuote();
       setTimeout(() => {
         quoteP.style.transitionDuration = '0.69s';
@@ -45,11 +45,11 @@
 
 <div
   id="quotes"
-  class="lg:bg-[#21052f] bg-[#371647] lg:mt-8 text-white pt-2 pb-2 lg:rounded-xl flex justify-center items-center"
+  class="mb-8 w-fit text-white flex justify-center items-center pl-2 border-l-4 border-fuchsia-200 border-solid"
 >
   <p
     bind:this={quoteP}
-    class="quoteText font-mundial text-[#ece0f3] italic font-thin"
+    class="quoteText font-mundial text-[#ece0f3] font-thin"
     style="opacity: 0; transform: translateX(30px);"
   >
     {@html quotesToRender}
