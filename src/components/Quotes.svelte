@@ -16,40 +16,39 @@
     return randomQuote;
   };
 
+  export let content: string = '';
+  $: quotesToRender = content;
   onMount(() => {
     quotesToRender = generateQuote();
     setTimeout(() => {
       quoteP.style.opacity = '1';
       quoteP.style.transform = 'translateX(0)';
     }, 69);
-  });
 
-  export let content: string = '';
-  $: quotesToRender = content;
-
-  setInterval(() => {
-    quoteP.style.opacity = '0';
-    quoteP.style.transform = 'translateX(-30px)';
-    setTimeout(() => {
-      quoteP.style.transitionDuration = '0s';
-      quoteP.style.transform = 'translateX(30px)';
-      quotesToRender = generateQuote();
+    setInterval(() => {
+      quoteP.style.opacity = '0';
+      quoteP.style.transform = 'translateX(-5px)';
       setTimeout(() => {
-        quoteP.style.transitionDuration = '0.69s';
-        quoteP.style.opacity = '1';
-        quoteP.style.transform = 'translateX(0)';
-      }, 69);
-    }, 690);
-  }, 6900);
+        quoteP.style.transitionDuration = '0s';
+        quoteP.style.transform = 'translateX(5px)';
+        quotesToRender = generateQuote();
+        setTimeout(() => {
+          quoteP.style.transitionDuration = '0.69s';
+          quoteP.style.opacity = '1';
+          quoteP.style.transform = 'translateX(0)';
+        }, 69);
+      }, 690);
+    }, 6900);
+  });
 </script>
 
 <div
   id="quotes"
-  class="lg:bg-[#21052f] bg-[#371647] lg:mt-8 text-white pt-2 pb-2 lg:rounded-xl flex justify-center items-center"
+  class="mb-8 ml-1 w-fit text-white flex justify-center items-center pl-2 border-l-4 border-fuchsia-200 border-solid"
 >
   <p
     bind:this={quoteP}
-    class="quoteText font-mundial text-[#ece0f3] italic font-thin"
+    class="quoteText font-mundial text-[#ece0f3] font-thin"
     style="opacity: 0; transform: translateX(30px);"
   >
     {@html quotesToRender}
