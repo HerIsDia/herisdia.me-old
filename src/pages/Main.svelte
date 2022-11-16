@@ -14,20 +14,29 @@
 </script>
 
 <Container>
-  <Box>
-    <div class="flex flex-row items-center gap-4 mb-8 flex-wrap">
-      <Logo src={logoRandom()} />
-      <div>
-        <Title text={languageString[language].title} />
-        <Subtitle text={languageString[language].subtitle} />
+  <div class="lg:grid lg:grid-flow-row lg:grid-cols-2 lg:grid-rows-1">
+    <Box>
+      <div class="flex flex-row items-center gap-4 mb-8 flex-wrap">
+        <Logo src={logoRandom()} />
+        <div>
+          <Title text={languageString[language].title} />
+          <Subtitle text={languageString[language].subtitle} />
+        </div>
       </div>
+      <div class="font-light">
+        <Quotes lang={language} />
+        {#each languageString[language].lists as list}
+          <List contents={list} />
+        {/each}
+        <Social contents={languageString[language].social} />
+      </div>
+    </Box>
+    <div class="hidden lg:block min-h-screen max-h-screen">
+      <img
+        src="./Background/0.png"
+        alt="Background"
+        class="object-cover min-h-screen w-100%"
+      />
     </div>
-    <div class="font-light">
-      <Quotes lang={language} />
-      {#each languageString[language].lists as list}
-        <List contents={list} />
-      {/each}
-      <Social contents={languageString[language].social} />
-    </div>
-  </Box>
+  </div>
 </Container>

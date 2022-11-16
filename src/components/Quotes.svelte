@@ -16,31 +16,30 @@
     return randomQuote;
   };
 
+  export let content: string = '';
+  $: quotesToRender = content;
   onMount(() => {
     quotesToRender = generateQuote();
     setTimeout(() => {
       quoteP.style.opacity = '1';
       quoteP.style.transform = 'translateX(0)';
     }, 69);
-  });
 
-  export let content: string = '';
-  $: quotesToRender = content;
-
-  setInterval(() => {
-    quoteP.style.opacity = '0';
-    quoteP.style.transform = 'translateX(-5px)';
-    setTimeout(() => {
-      quoteP.style.transitionDuration = '0s';
-      quoteP.style.transform = 'translateX(5px)';
-      quotesToRender = generateQuote();
+    setInterval(() => {
+      quoteP.style.opacity = '0';
+      quoteP.style.transform = 'translateX(-5px)';
       setTimeout(() => {
-        quoteP.style.transitionDuration = '0.69s';
-        quoteP.style.opacity = '1';
-        quoteP.style.transform = 'translateX(0)';
-      }, 69);
-    }, 690);
-  }, 6900);
+        quoteP.style.transitionDuration = '0s';
+        quoteP.style.transform = 'translateX(5px)';
+        quotesToRender = generateQuote();
+        setTimeout(() => {
+          quoteP.style.transitionDuration = '0.69s';
+          quoteP.style.opacity = '1';
+          quoteP.style.transform = 'translateX(0)';
+        }, 69);
+      }, 690);
+    }, 6900);
+  });
 </script>
 
 <div
