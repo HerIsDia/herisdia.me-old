@@ -7,9 +7,10 @@
   import Subtitle from '../components/Subtitle.svelte';
   import Title from '../components/Title.svelte';
   import Quotes from '../components/Quotes.svelte';
+  import Background from '../components/Background.svelte';
 
   import { languageString } from '../languages/content';
-  import { logoRandom } from '../scripts/logoRandom';
+  import { backgroundRandom, logoRandom } from '../scripts/imagesRandom';
   export let language: string = 'en';
 </script>
 
@@ -31,12 +32,6 @@
         <Social contents={languageString[language].social} />
       </div>
     </Box>
-    <div class="hidden lg:block min-h-screen max-h-screen">
-      <img
-        src="./Background/0.png"
-        alt="Background"
-        class="object-cover min-h-screen w-100%"
-      />
-    </div>
+    <Background src={backgroundRandom()} />
   </div>
 </Container>

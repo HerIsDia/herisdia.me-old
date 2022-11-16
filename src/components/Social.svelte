@@ -5,7 +5,7 @@
 
 <div
   id="social"
-  class="lg:mt-8 flex flex-row items-center justify-start flex-wrap gap-4"
+  class="lg:mt-8 flex flex-row items-center justify-start lg:justify-between flex-wrap gap-4"
 >
   {#each contents as content}
     <a

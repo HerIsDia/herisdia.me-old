@@ -17,6 +17,20 @@ readdir('./public/logos', (err, files) => {
   }
 });
 
+console.log('🖼️ Getting number of images in the Background folder.');
+// Get number of images in the Background folder.
+readdir('./public/Background', (err, files) => {
+  if (err) {
+    throw new Error(err);
+  } else {
+    console.log(`🖼️ ${files.length} images found.`);
+    const results = { nbrOfImages: files.length, files: files };
+    console.log(`📝 Writing results to file.`);
+    writeFileSync('./src/background.json', JSON.stringify(results));
+    console.log(`📝 Results written to file.`);
+  }
+});
+
 console.log('🅰️ Generate quotes.');
 const filefr = readFileSync('./src/quotes/fr.txt');
 const fileen = readFileSync('./src/quotes/en.txt');
