@@ -8,7 +8,7 @@ This is a document about crediting all the artists who have drawn arts for the m
 
 ## Puurply
 
-🖼️ 0, 1, 6, 7, 8, 15, 16, 19, 22. <br/>
+🖼️ 0, 1, 6, 7, 8, 15, 16, 19, 22, 28, 30. <br/>
 🖌️ [DeviantArt](https://www.deviantart.com/puurply)
 
 ## Raiuche
@@ -18,7 +18,7 @@ This is a document about crediting all the artists who have drawn arts for the m
 
 ## Oféline
 
-🖼️ 5, 11. <br/>
+🖼️ 5, 11, 27. <br/>
 🖌️ Discord: @Oféline#0291
 
 ## Unitoxik
@@ -33,7 +33,7 @@ This is a document about crediting all the artists who have drawn arts for the m
 
 ## Linkann
 
-🖼️ 20. <br/>
+🖼️ 20, 26. <br/>
 🖌️ [Linktr.ee](https://linktr.ee/linkann)
 
 ## Sunee
@@ -56,7 +56,27 @@ This is a document about crediting all the artists who have drawn arts for the m
 🖼️ 21. <br/>
 🖌️ [Twitter](https://twitter.com/NissaFY_)
 
-## Linkann
+## Changingmirror
 
 🖼️ 13. <br/>
 🖌️ Discord: @changingmirror#2511
+
+## Kitsu
+
+🖼️ 29. <br/>
+🖌️ [DeviantArt](https://www.deviantart.com/kitsunemun)
+
+## Sashimi
+
+🖼️ 25,31. <br/>
+🖌️ Discord: @🍣•Sa.shimi•🍣#5253
+
+## Nanako
+
+🖼️ 24. <br/>
+🖌️ Discord: @Zelfo789#9196
+
+## Y PLEUT.
+
+🖼️ 23,32. <br/>
+🖌️ It's just Nanko & Kitsu.

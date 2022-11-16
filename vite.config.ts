@@ -19,7 +19,7 @@ export default defineConfig({
         name: 'Her is dia website',
         short_name: 'HerIsDia.me',
         description: 'Website of HerIsDia.',
-        theme_color: '#ca9eec',
+        theme_color: '#0f0f0f',
         icons: [
           {
             src: 'android-chrome-192x192.png',
