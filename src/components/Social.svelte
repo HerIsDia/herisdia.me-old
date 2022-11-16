@@ -5,13 +5,12 @@
 
 <div
   id="social"
-  class="lg:mt-8 flex flex-col lg:flex-row lg:justify-between lg:flex-wrap"
+  class="lg:mt-8 flex flex-row items-center justify-start flex-wrap gap-4"
 >
   {#each contents as content}
     <a
       id="button"
       style="--color: {content.color};"
-      class="mt-4 lg:ml-2 lg:mr-2 uppercase bg-[#040f13] p-2 lg:p-4 border-solid border-2 text-center"
       href={content.href}
       target="_blank">{content.text}</a
     >
@@ -21,15 +20,24 @@
 <style>
   #button {
     color: var(--color);
-    border-color: var(--color);
     transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1f1f1f;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
   }
 
-  #button:hover,
-  #button:focus {
-    background-color: var(--color);
-    color: #040f13;
-    border-color: #fff;
-    transform: scale(1.05);
+  #button:hover {
+    color: white;
+    border-color: var(--color);
+  }
+  #button:focus,
+  #button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
   }
 </style>

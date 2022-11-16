@@ -15,7 +15,7 @@
 
 <Container>
   <Box>
-    <div class="flex flex-row items-center gap-4 mb-8">
+    <div class="flex flex-row items-center gap-4 mb-8 flex-wrap">
       <Logo src={logoRandom()} />
       <div>
         <Title text={languageString[language].title} />

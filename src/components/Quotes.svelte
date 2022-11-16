@@ -45,7 +45,7 @@
 
 <div
   id="quotes"
-  class="mb-8 w-fit text-white flex justify-center items-center pl-2 border-l-4 border-fuchsia-200 border-solid"
+  class="mb-8 ml-1 w-fit text-white flex justify-center items-center pl-2 border-l-4 border-fuchsia-200 border-solid"
 >
   <p
     bind:this={quoteP}
