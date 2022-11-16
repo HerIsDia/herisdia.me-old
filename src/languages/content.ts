@@ -15,8 +15,8 @@ export const languageString: LanguageContent = {
     social: [
       {
         text: 'Youtube',
-        href: 'https://www.youtube.com/channel/UCcF4Rn8Gbzc_Z_8hIeeV7dg',
-        color: '#f87171',
+        href: 'https://www.youtube.com/@Diamant.',
+        color: '#f87171'
       },
 
       {
@@ -34,13 +34,13 @@ export const languageString: LanguageContent = {
       {
         text: 'Source Code',
         href: 'https://github.com/herisdia/herisdia.me',
-        color: '#60a5fA',
+        color: '#d4d4d4',
       },
 
       {
         text: 'Art Credits',
         href: 'https://github.com/HerIsDia/herisdia.me/blob/master/credits.md',
-        color: '#c084fc',
+        color: '#d4d4d4',
       },
     ],
   },
@@ -61,6 +61,11 @@ export const languageString: LanguageContent = {
     ],
     social: [
       {
+        text: 'Mes écrits',
+        href: 'https://herisdia.art',
+        color: '#b69bc9',
+      },
+      {
         text: 'Youtube',
         href: 'https://www.youtube.com/channel/UCcF4Rn8Gbzc_Z_8hIeeV7dg',
         color: '#f87171',
@@ -73,21 +78,15 @@ export const languageString: LanguageContent = {
       },
 
       {
-        text: 'DeviantArt',
-        href: 'https://deviantart.com/herisdia',
-        color: '#4ade80',
-      },
-
-      {
         text: 'Code source',
         href: 'https://github.com/herisdia/herisdia.me',
-        color: '#60a5fA',
+        color: '#d4d4d4',
       },
 
       {
         text: 'Crédits des arts',
         href: 'https://github.com/HerIsDia/herisdia.me/blob/master/credits.md',
-        color: '#c084fc',
+        color: '#d4d4d4',
       },
     ],
   },
@@ -107,41 +106,24 @@ export const languageString: LanguageContent = {
       ],
     ],
     social: [
-      {
-        text: 'Youtubo',
-        href: 'https://www.youtube.com/channel/UCcF4Rn8Gbzc_Z_8hIeeV7dg',
-        color: '#f87171',
-      },
 
       {
-        text: 'Githubo',
-        href: 'https://github.com/herisdia',
-        color: '#facc15',
-      },
-
-      {
-        text: 'DeviantArto',
-        href: 'https://deviantart.com/herisdia',
-        color: '#4ade80',
+        text: 'Traducteuro',
+        href: 'https://espo.heris.app/',
+        color: '#98b9e3',
       },
 
       {
         text: 'Codo sourco',
         href: 'https://github.com/herisdia/herisdia.me',
-        color: '#60a5fA',
+        color: '#d4d4d4',
       },
 
       {
         text: 'Créditos dos artos',
         href: 'https://github.com/HerIsDia/herisdia.me/blob/master/credits.md',
-        color: '#c084fc',
-      },
-
-      {
-        text: 'Traducteuro',
-        href: 'https://github.com/HerIsDia/herisdia.me/blob/master/credits.md',
-        color: '#FFFFFF',
-      },
+        color: '#d4d4d4',
+      }
     ],
   },
 };
