@@ -4,9 +4,5 @@
 </script>
 
 <div id="logo" class="flex justify-center items-center ">
-  <img
-    {src}
-    {alt}
-    class="w-[200px] rounded-full border-solid border-8 border-[#ca9eec]"
-  />
+  <img {src} {alt} class="w-32 rounded-2xl border-solid" />
 </div>

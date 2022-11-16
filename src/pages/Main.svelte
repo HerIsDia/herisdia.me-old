@@ -14,10 +14,14 @@
 </script>
 
 <Container>
-  <Logo src={logoRandom()} />
   <Box>
-    <Title text={languageString[language].title} />
-    <Subtitle text={languageString[language].subtitle} />
+    <div class="flex flex-row items-center gap-4 mb-8">
+      <Logo src={logoRandom()} />
+      <div>
+        <Title text={languageString[language].title} />
+        <Subtitle text={languageString[language].subtitle} />
+      </div>
+    </div>
     <div class="font-light">
       <Quotes lang={language} />
       {#each languageString[language].lists as list}
