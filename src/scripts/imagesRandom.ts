@@ -10,5 +10,5 @@ export const logoRandom = (): string => {
 export const backgroundRandom = (): string => {
     const nbrOfImages = backgroundGenerated.nbrOfImages;
     const chosenImage = Math.floor(Math.random() * nbrOfImages);
-    return `./Background/${backgroundGenerated.files[chosenImage]}`;
+    return `./backgrounds/${backgroundGenerated.files[chosenImage]}`;
 }

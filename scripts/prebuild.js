@@ -17,9 +17,9 @@ readdir('./public/logos', (err, files) => {
   }
 });
 
-console.log('🖼️ Getting number of images in the Background folder.');
-// Get number of images in the Background folder.
-readdir('./public/Background', (err, files) => {
+console.log('🖼️ Getting number of images in the backgrounds folder.');
+// Get number of images in the backgrounds folder.
+readdir('./public/backgrounds', (err, files) => {
   if (err) {
     throw new Error(err);
   } else {
