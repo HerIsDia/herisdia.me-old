@@ -8,10 +8,10 @@
   import Title from '../components/Title.svelte';
   import Quotes from '../components/Quotes.svelte';
   import Background from '../components/Background.svelte';
-
   import { languageString } from '../languages/content';
   import { backgroundRandom, logoRandom } from '../scripts/imagesRandom';
   export let language: string = 'en';
+  const background = backgroundRandom();
 </script>
 
 <Container>
@@ -32,6 +32,6 @@
         <Social contents={languageString[language].social} />
       </div>
     </Box>
-    <Background src={backgroundRandom()} />
+    <Background src={background} />
   </div>
 </Container>

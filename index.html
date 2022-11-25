@@ -21,9 +21,21 @@
     <script type="module" src="/src/main.ts"></script>
   </body>
   <style>
+    :root {
+      --primary: #b69bc9;
+      --secondary: #e2ceef;
+      --selection: #ca9eec69;
+      --selection-text: #fff;
+    }
+
     ::selection {
-      background: #ca9eec69;
-      color: #fff;
+      background: var(--selection);
+      color: var(--selection-text);
     }
   </style>
+  <script
+    src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@0.0.10/dist/cdn/material-dynamic-colors.min.js"
+    type="text/javascript"
+    defer
+  ></script>
 </html>
