@@ -3,8 +3,7 @@
 </script>
 
 <h2 class="text-2xl lg:text-3xl">
-  <span
-    class="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-blue-300"
+  <span style="color: var(--primary); transition: color 0.69s ease-in-out;"
     >{text}</span
   >
 </h2>
