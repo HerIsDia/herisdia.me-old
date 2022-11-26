@@ -14,6 +14,7 @@ export default defineConfig({
         'apple-touch-icon.png',
         'logo.png',
         'logos/*.png',
+        'backgrounds/*.png',
       ],
       manifest: {
         name: 'Her is dia website',
