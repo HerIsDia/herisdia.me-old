@@ -1,19 +1,23 @@
 <script lang="ts">
   import type { Social } from '../types';
-  export let contents: Social[];
+  export let contents: Social[][];
 </script>
 
-<div
-  id="social"
-  class="lg:mt-8 flex flex-row items-center justify-start lg:justify-between flex-wrap gap-4"
->
+<div class="lg:mt-8">
   {#each contents as content}
-    <a
-      id="button"
-      style="--color: {content.color};"
-      href={content.href}
-      target="_blank">{content.text}</a
+    <div
+      id="social"
+      class="mt-4 flex flex-row items-center justify-start lg:justify-start flex-wrap gap-4"
     >
+      {#each content as item}
+        <a
+          id="button"
+          style="--color: {item.color};"
+          href={item.href}
+          target="_blank">{item.text}</a
+        >
+      {/each}
+    </div>
   {/each}
 </div>
 
