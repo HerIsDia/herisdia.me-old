@@ -15,7 +15,9 @@
 </script>
 
 <Container>
-  <div class="lg:grid lg:grid-flow-row lg:grid-cols-2 lg:grid-rows-1">
+  <div
+    class="lg:grid items-center lg:grid-flow-row lg:grid-cols-2 lg:grid-rows-1"
+  >
     <Box>
       <div class="flex flex-row items-center gap-4 mb-8 flex-wrap">
         <Logo src={logoRandom()} />
