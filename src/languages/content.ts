@@ -29,7 +29,13 @@ export const languageString: LanguageContent = {
         text: 'DeviantArt',
         href: 'https://deviantart.com/hereisdia',
         color: '#4ade80',
-      },], [
+      },
+      {
+        text: 'Tumblr',
+        href: 'https://www.heris.fun/',
+        color: '#749ded',
+      }
+    ], [
 
       {
         text: 'Source Code',
